@@ -1,0 +1,44 @@
+New Project
+ ASP.Net Web Application
+Template -> Empty
+
+
+Package Manager Console
+
+Install-Package Microsoft.AspNet.WebApi.Owin 
+Install-Package Microsoft.Owin.Host.SystemWeb
+
+//Se for utilizar autenticação por token
+Install-Package Microsoft.Owin.Cors 
+
+Criar na Raiz
+classe Startup.cs  com os métodos
+
+2 Método opcional utilizado somente para remover o padrão XML da api, deixando somente o JSON
+
+    1-  public void Configuration(IAppBuilder app)
+        {
+            var config = new HttpConfiguration();
+
+            ConfigureWebApi(config);
+            app.UseWebApi(config);
+        }
+
+    2-  public static void ConfigureWebApi(HttpConfiguration config)
+        {
+            var formatters = config.Formatters;
+            formatters.Remove(formatters.XmlFormatter);
+
+            var jsonSettings = formatters.JsonFormatter.SerializerSettings;
+            jsonSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            jsonSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+
+            config.MapHttpAttributeRoutes();
+        }
+		
+		
+		
+Criar uma pasta na raiz chamada 'Controllers'		
