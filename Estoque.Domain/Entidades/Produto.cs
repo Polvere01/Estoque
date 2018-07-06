@@ -1,18 +1,25 @@
-﻿namespace Estoque.Domain.Entidades
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace Estoque.Domain.Entidades
 {
-    public class GrupoProduto
+    public class Produto
     {
-        public GrupoProduto(int idGrupo,  string descricaoGrupo)
+        public Produto(int idProduto, string descricaoProduto)
         {
-            IdGrupo = idGrupo;
-            DescricaoGrupo = descricaoGrupo;
+            IdProduto = idProduto;
+            DescricaoProduto = descricaoProduto;
         }
 
-        protected GrupoProduto()
+        protected Produto()
         {
         }
 
-        public int IdGrupo { get; private set; }
-        public string DescricaoGrupo { get; private set; }
+        public int IdProduto { get; private set; }
+        public string DescricaoProduto { get; private set; }
+        public int IdEmpresa { get; private set; }
+        public int IdGrupoProduto { get; private set; }
+        public Empresa Empresa { get; private set; }
+        public GrupoProduto GrupoProduto { get; private set; }
     }
 }

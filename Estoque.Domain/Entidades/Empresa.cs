@@ -12,7 +12,7 @@ namespace Estoque.Domain.Entidades
         {
             IdEmpresa = idEmpresa;
             DescricaoEmpresa = descricaoEmpresa;
-            Produtos = new List<Produto>();
+            Produto = new HashSet<Produto>();
         }
 
         protected Empresa()
@@ -21,6 +21,6 @@ namespace Estoque.Domain.Entidades
 
         public int IdEmpresa { get; private set; }
         public string DescricaoEmpresa { get; private set; }
-        public IEnumerable<Produto> Produtos { get; private set; }
+        public ICollection<Produto> Produto { get; private set; }
     }
 }
