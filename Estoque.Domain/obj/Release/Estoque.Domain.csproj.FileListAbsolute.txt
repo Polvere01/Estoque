@@ -1,0 +1,13 @@
+C:\Git\Estoque\Estoque.Domain\bin\Release\Estoque.Domain.dll
+C:\Git\Estoque\Estoque.Domain\bin\Release\Estoque.Domain.pdb
+C:\Git\Estoque\Estoque.Domain\bin\Release\Newtonsoft.Json.dll
+C:\Git\Estoque\Estoque.Domain\bin\Release\Owin.dll
+C:\Git\Estoque\Estoque.Domain\bin\Release\System.Net.Http.Formatting.dll
+C:\Git\Estoque\Estoque.Domain\bin\Release\System.Web.Http.dll
+C:\Git\Estoque\Estoque.Domain\bin\Release\System.Web.Http.Owin.dll
+C:\Git\Estoque\Estoque.Domain\bin\Release\Newtonsoft.Json.xml
+C:\Git\Estoque\Estoque.Domain\bin\Release\System.Net.Http.Formatting.xml
+C:\Git\Estoque\Estoque.Domain\bin\Release\System.Web.Http.xml
+C:\Git\Estoque\Estoque.Domain\bin\Release\System.Web.Http.Owin.xml
+C:\Git\Estoque\Estoque.Domain\obj\Release\Estoque.Domain.dll
+C:\Git\Estoque\Estoque.Domain\obj\Release\Estoque.Domain.pdb

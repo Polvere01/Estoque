@@ -1,0 +1,14 @@
+C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.csprojResolveAssemblyReference.cache
+C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.Migrations.v1.resources
+C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.csproj.GenerateResource.Cache
+C:\Git\Estoque\Estoque.Infra\bin\Debug\Estoque.Infra.dll.config
+C:\Git\Estoque\Estoque.Infra\bin\Debug\Estoque.Infra.dll
+C:\Git\Estoque\Estoque.Infra\bin\Debug\Estoque.Infra.pdb
+C:\Git\Estoque\Estoque.Infra\bin\Debug\EntityFramework.dll
+C:\Git\Estoque\Estoque.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\Estoque\Estoque.Infra\bin\Debug\Estoque.Domain.dll
+C:\Git\Estoque\Estoque.Infra\bin\Debug\Estoque.Domain.pdb
+C:\Git\Estoque\Estoque.Infra\bin\Debug\EntityFramework.xml
+C:\Git\Estoque\Estoque.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.dll
+C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.pdb

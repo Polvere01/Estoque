@@ -8,6 +8,7 @@ namespace Estoque.Domain.Entidades
         {
             IdGrupo = idGrupo;
             DescricaoGrupo = descricaoGrupo;
+            Produto = new List<Produto>();
         }
 
         protected GrupoProduto()

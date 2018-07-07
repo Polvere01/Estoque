@@ -1,5 +1,9 @@
 ﻿using Newtonsoft.Json.Serialization;
 using Owin;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Http;
 
 namespace Estoque.WebApi
@@ -27,7 +31,7 @@ namespace Estoque.WebApi
             formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
 
             config.MapHttpAttributeRoutes();
-        
         }
+
     }
 }

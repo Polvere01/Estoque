@@ -12,7 +12,7 @@ namespace Estoque.Domain.Entidades
         {
             IdEmpresa = idEmpresa;
             DescricaoEmpresa = descricaoEmpresa;
-            Produto = new HashSet<Produto>();
+            Produto = new List<Produto>();
         }
 
         protected Empresa()

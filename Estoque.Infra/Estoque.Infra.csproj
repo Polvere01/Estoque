@@ -11,6 +11,7 @@
     <AssemblyName>Estoque.Infra</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,9 +33,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -51,18 +54,15 @@
     <Compile Include="Mapeamento\ProdutoMap.cs" />
     <Compile Include="Mapeamento\EmpresaMap.cs" />
     <Compile Include="Contexto\EstoqueDataContext.cs" />
-    <Compile Include="Migrations\201807061648597_v1.cs" />
-    <Compile Include="Migrations\201807061648597_v1.Designer.cs">
-      <DependentUpon>201807061648597_v1.cs</DependentUpon>
+    <Compile Include="Migrations\201807062321491_v1.cs" />
+    <Compile Include="Migrations\201807062321491_v1.Designer.cs">
+      <DependentUpon>201807062321491_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\ProdutoRepositorio.cs" />
     <Compile Include="Repositorio\EmpresaRepositorio.cs" />
-    <Compile Include="Repositorio\dsa.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Compile Include="Repositorio\GrupoProdutoRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Estoque.Domain\Estoque.Domain.csproj">
@@ -71,8 +71,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807061648597_v1.resx">
-      <DependentUpon>201807061648597_v1.cs</DependentUpon>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807062321491_v1.resx">
+      <DependentUpon>201807062321491_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
