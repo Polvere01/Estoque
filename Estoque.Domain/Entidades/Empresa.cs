@@ -12,7 +12,6 @@ namespace Estoque.Domain.Entidades
         {
             IdEmpresa = idEmpresa;
             DescricaoEmpresa = descricaoEmpresa;
-            Produto = new List<Produto>();
         }
 
         protected Empresa()
@@ -21,6 +20,5 @@ namespace Estoque.Domain.Entidades
 
         public int IdEmpresa { get; private set; }
         public string DescricaoEmpresa { get; private set; }
-        public ICollection<Produto> Produto { get; private set; }
     }
 }

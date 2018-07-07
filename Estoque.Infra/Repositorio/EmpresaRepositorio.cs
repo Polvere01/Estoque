@@ -36,7 +36,7 @@ namespace Estoque.Infra.Repositorio
 
         public List<Empresa> ListaEmpresa()
         {
-            List<Empresa> ListaEmpresa = _db.Empresa.Include(x => x.Produto).ToList();
+            List<Empresa> ListaEmpresa = _db.Empresa.ToList();
 
             return ListaEmpresa;
 

@@ -17,13 +17,9 @@ namespace Estoque.Infra
                 .HasMaxLength(10)
                 .IsRequired();
 
-            HasRequired(x => x.Empresa)
-                .WithMany(x => x.Produto)
-                .HasForeignKey(x => x.IdEmpresa);
+            HasRequired(x => x.Empresa);
 
-            HasRequired(x => x.GrupoProduto)
-                .WithMany(x => x.Produto)
-                .HasForeignKey(x => x.IdGrupoProduto);
+            HasRequired(x => x.GrupoProduto);
         }
     }
 }

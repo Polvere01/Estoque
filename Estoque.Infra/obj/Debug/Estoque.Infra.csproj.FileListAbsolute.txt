@@ -12,3 +12,4 @@ C:\Git\Estoque\Estoque.Infra\bin\Debug\EntityFramework.xml
 C:\Git\Estoque\Estoque.Infra\bin\Debug\EntityFramework.SqlServer.xml
 C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.dll
 C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.pdb
+C:\Git\Estoque\Estoque.Infra\obj\Debug\Estoque.Infra.Migrations.v2.resources

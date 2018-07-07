@@ -5,7 +5,6 @@ namespace Estoque.Infra
 {
     public class GrupoProdutoMap : EntityTypeConfiguration<GrupoProduto>
     {
-
         public GrupoProdutoMap()
         {
             ToTable("t_grupo_produto");

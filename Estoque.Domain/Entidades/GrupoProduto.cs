@@ -8,7 +8,6 @@ namespace Estoque.Domain.Entidades
         {
             IdGrupo = idGrupo;
             DescricaoGrupo = descricaoGrupo;
-            Produto = new List<Produto>();
         }
 
         protected GrupoProduto()
@@ -17,6 +16,5 @@ namespace Estoque.Domain.Entidades
 
         public int IdGrupo { get; private set; }
         public string DescricaoGrupo { get; private set; }
-        public ICollection<Produto> Produto { get; private set; }
     }
 }

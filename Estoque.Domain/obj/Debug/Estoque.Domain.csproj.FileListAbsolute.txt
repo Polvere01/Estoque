@@ -11,3 +11,4 @@ C:\Git\Estoque\Estoque.Domain\bin\Debug\System.Web.Http.xml
 C:\Git\Estoque\Estoque.Domain\bin\Debug\System.Web.Http.Owin.xml
 C:\Git\Estoque\Estoque.Domain\obj\Debug\Estoque.Domain.dll
 C:\Git\Estoque\Estoque.Domain\obj\Debug\Estoque.Domain.pdb
+C:\Git\Estoque\Estoque.Domain\obj\Debug\Estoque.Domain.csprojResolveAssemblyReference.cache

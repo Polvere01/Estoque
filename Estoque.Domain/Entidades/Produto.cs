@@ -17,8 +17,6 @@ namespace Estoque.Domain.Entidades
 
         public int IdProduto { get; private set; }
         public string DescricaoProduto { get; private set; }
-        public int IdEmpresa { get; private set; }
-        public int IdGrupoProduto { get; private set; }
         public Empresa Empresa { get; private set; }
         public GrupoProduto GrupoProduto { get; private set; }
     }
